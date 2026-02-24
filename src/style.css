@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+#startButton {
+  padding: 16px 32px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#scanner {
+  position: relative;
+}
+
+video {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100dvh;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#result {
+  position: fixed;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 24px;
+  text-align: center;
+  word-break: break-all;
+  background-color: #00000088;
+}
